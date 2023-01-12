@@ -28,9 +28,14 @@
   }
 
   header {
+    /* margin-top: -10px; */
+    width: 80%;
+  }
+
+  .menuNav {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
     font-weight: 700;
     font-size: 18px;
     color: var(--primary);
@@ -41,6 +46,7 @@
   }
 
   .container {
+    margin-top: 50px;
     display: flex;
     height: 80%;
     justify-content: center;
@@ -69,8 +75,16 @@
     margin-bottom: 10px;
   }
 
+  .socialLinks {
+    display: flex;
+  }
+
+  .socialLinks li {
+    list-style: none;
+  }
+
   .socialIcon {
-    margin: 5px;
+    margin: 20px;
     text-decoration: none;
     cursor: pointer;
   }
