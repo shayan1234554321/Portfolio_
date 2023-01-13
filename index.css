@@ -49,7 +49,6 @@
 
   .landingPage {
     display: flex;
-    height: 80%;
     justify-content: center;
     flex-direction: column;
     width: 80%;
@@ -124,7 +123,7 @@
     height: max-content;
   }
 
-  article:nth-child(1){
+  article:nth-child(1) {
     margin-bottom: 20px;
   }
 
@@ -159,6 +158,16 @@
     font-weight: 600;
     color: var(--light-font);
     display: flex;
+  }
+
+  .segmentElements li {
+    width: 85%;
+    background-color: #f7f7f9;
+    margin: 5px 0;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
   }
 
   .attributes ul li {
@@ -214,19 +223,18 @@
     width: 80%;
     margin-left: 10px;
     padding-right: 20px;
-    display: flex;
-    justify-content: space-between;
     font-weight: 600;
     height: 60px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border-bottom: 1px solid rgba(0, 0, 0, 0.146);
   }
 
-  .segment:nth-child(1){
+  .segment:nth-child(1) {
     border: none;
   }
-  
+
   .aboutAttributes {
     margin-top: 50px;
   }
@@ -235,23 +243,13 @@
     font-size: 20px;
   }
 
-  .segmentElements ul{
+  .segmentElements ul {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     list-style: none;
     flex-direction: column;
-  }
-
-  .segmentElements li{
-    width: 85%;
-    background-color: #F7F7F9;
-    margin: 5px 0;
-    border-radius: 7px;
-    display: flex;
-    align-items: center;
-    padding: 10px;
   }
 
   .elementImage {
