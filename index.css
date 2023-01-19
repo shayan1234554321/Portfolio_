@@ -93,7 +93,7 @@
     letter-spacing: 1px;
   }
 
-  .excelamationMark{
+  .excelamationMark {
     font-size: 48px;
     animation: excelamationMark 2s infinite ease-in-out;
   }
@@ -704,13 +704,15 @@
   }
 }
 
-@keyframes excelamationMark{
+@keyframes excelamationMark {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
@@ -720,12 +722,15 @@
   0% {
     transform: translateX(100px) rotateZ(30deg);
   }
+
   10% {
     transform: translateX(100px) rotateZ(30deg);
   }
+
   70% {
     transform: translateX(-20px) rotateZ(-5deg);
   }
+
   100% {
     transform: translateX(0) rotateZ(0);
   }
