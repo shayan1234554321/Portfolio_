@@ -43,6 +43,7 @@
     font-weight: 700;
     font-size: 18px;
     color: var(--primary);
+    animation: logo 2s ease-in-out;
   }
 
   nav {
@@ -84,6 +85,17 @@
     width: 60%;
     font-weight: 700;
     font-size: 48px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .landingPage h1:hover {
+    cursor: default;
+    letter-spacing: 1px;
+  }
+
+  .excelamationMark {
+    font-size: 48px;
+    animation: excelamationMark 2s infinite ease-in-out;
   }
 
   .landingPage p {
@@ -152,6 +164,12 @@
     width: 40%;
     height: 90%;
     margin-right: 50px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .workImage:hover {
+    transform: scale(1.03);
   }
 
   article:nth-child(2) .workImage,
@@ -683,5 +701,37 @@
 @media screen and (min-width: 426px) {
   .landingPage {
     background-image: url('./images/landingPageBg.svg');
+  }
+}
+
+@keyframes excelamationMark {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes logo {
+  0% {
+    transform: translateX(100px) rotateZ(30deg);
+  }
+
+  10% {
+    transform: translateX(100px) rotateZ(30deg);
+  }
+
+  70% {
+    transform: translateX(-20px) rotateZ(-5deg);
+  }
+
+  100% {
+    transform: translateX(0) rotateZ(0);
   }
 }
