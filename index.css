@@ -20,7 +20,7 @@
 
 /* --------- Desktop ---------  */
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 769px) {
   body {
     background-color: var(--light-background);
   }
@@ -307,7 +307,7 @@
   .contact {
     background-color: var(--blue);
     border-radius: 150px 0 0 0;
-    height: 100vh;
+    min-height: 100vh;
     width: 80%;
     position: relative;
     display: flex;
@@ -377,7 +377,7 @@
 
 /* --------- Mobile --------- */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 769px) {
   .portfolio {
     width: 100%;
     min-height: 100vh;
@@ -623,7 +623,7 @@
   .contact {
     background-color: var(--blue);
     border-radius: 70px 0 0 0;
-    height: 100vh;
+    height: 110vh;
     width: 80%;
     position: relative;
     display: flex;
@@ -677,5 +677,11 @@
     width: calc(100% - 20px);
     border-radius: 5px;
     outline: none;
+  }
+}
+
+@media screen and (min-width: 426px) {
+  .landingPage {
+    background-image: url('./images/landingPageBg.svg');
   }
 }
