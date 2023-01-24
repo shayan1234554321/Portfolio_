@@ -7,7 +7,7 @@
   --primary-light: #7f8cff;
   --light-background: #f4f4f4;
   --blue-background: #ebebff;
-  --light-font: #7a869a;
+  --light-font: #535353;
   --blue: #6070ff;
 }
 
@@ -44,6 +44,7 @@
     font-size: 18px;
     color: var(--primary);
     animation: logo 2s ease-in-out;
+    text-decoration: none;
   }
 
   nav {
@@ -232,7 +233,7 @@
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 8px;
-    border: 2px solid var(--primary-light);
+    border: 3px solid white;
     font-size: 17px;
     font-weight: 500;
     color: var(--primary);
@@ -396,6 +397,14 @@
 /* --------- Mobile --------- */
 
 @media screen and (max-width: 769px) {
+  .logo {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--primary);
+    animation: logo 2s ease-in-out;
+    text-decoration: none;
+  }
+
   .portfolio {
     width: 100%;
     min-height: 100vh;
@@ -575,7 +584,7 @@
   .visitButton {
     padding: 5px 10px;
     border-radius: 8px;
-    border: 2px solid var(--primary-light);
+    border: 3px solid white;
     font-size: 17px;
     font-weight: 500;
     color: var(--primary);
