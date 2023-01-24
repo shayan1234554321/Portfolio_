@@ -38,21 +38,21 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">HTML and CSS</a></li>
+    <li><a>HTML and CSS</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">No server</a></li>
+    <li><a>No server</a></li>
   </ul>
 </details>
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">No Database</a></li>
+    <li><a>No Database</a></li>
   </ul>
 </details>
 
@@ -68,7 +68,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Not deployed
+> No live demo available
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -108,9 +108,10 @@ No tests
 
 ### Deployment
 
-You can deploy this project using:
+This website is deployed on the following link
 
-Get a hosting website and give all of the github files
+<a href="https://shayan1234554321.github.io/Portfolio_/" >Link</a>
+( https://shayan1234554321.github.io/Portfolio_/ )
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
