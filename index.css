@@ -9,7 +9,7 @@
   --blue-background: #ebebff;
   --light-font: #535353;
   --blue: #6070ff;
-  --blue-bg: #6070ffd0;
+  --blue-bg: #6070ff;
 }
 
 * {
@@ -432,10 +432,11 @@
     width: calc(100% - 56px);
     height: 100vh;
     z-index: 1;
-    backdrop-filter: blur(10px);
     background-color: var(--blue-bg);
     color: white;
     padding: 106px 28px;
+    mix-blend-mode: multiply;
+    backdrop-filter: blur(8px);
   }
 
   .menuModel ul {
@@ -488,6 +489,7 @@
   .mobileMenu {
     cursor: pointer;
     display: block;
+    list-style: none;
   }
 
   .menu {
