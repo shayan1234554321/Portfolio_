@@ -9,6 +9,7 @@
   --blue-background: #ebebff;
   --light-font: #535353;
   --blue: #6070ff;
+  --blue-bg: #6070ffd0;
 }
 
 * {
@@ -23,6 +24,10 @@
 @media screen and (min-width: 769px) {
   body {
     background-color: var(--light-background);
+  }
+
+  .menuModel {
+    display: none;
   }
 
   * {
@@ -405,6 +410,58 @@
     text-decoration: none;
   }
 
+  .socialLinks li {
+    list-style: none;
+  }
+
+  .segmentElements li {
+    width: 85%;
+    background-color: #f7f7f9;
+    margin: 5px 0;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .menuModel {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 56px);
+    height: 100vh;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    background-color: var(--blue-bg);
+    color: white;
+    padding: 106px 28px;
+  }
+
+  .menuModel ul {
+    list-style: none;
+    line-height: 64px;
+  }
+
+  .menuModel ul li {
+    font-weight: 600;
+    font-size: 32px;
+    width: fit-content;
+  }
+
+  .menuModel ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 32px;
+    color: white;
+  }
+
+  .close {
+    float: right;
+    font-size: 40px;
+    transform: translateY(-44px);
+  }
+
   .portfolio {
     width: 100%;
     min-height: 100vh;
@@ -422,6 +479,7 @@
   }
 
   .menuNav {
+    position: relative;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -473,10 +531,6 @@
   .socialLinks {
     display: flex;
     margin: 10px 0;
-  }
-
-  .socialLinks li {
-    list-style: none;
   }
 
   .socialIcon {
@@ -549,16 +603,6 @@
     font-weight: 600;
     color: var(--light-font);
     display: flex;
-  }
-
-  .segmentElements li {
-    width: 85%;
-    background-color: #f7f7f9;
-    margin: 5px 0;
-    border-radius: 7px;
-    display: flex;
-    align-items: center;
-    padding: 10px;
   }
 
   .attributes ul li {

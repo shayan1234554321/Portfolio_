@@ -10,20 +10,29 @@
 </head>
 <body>
     <div class="portfolio">
+        <div class="menuModel" id="model" >
+            <span class="close" id="close" >&times;</span>
+            <ul>
+                <li id="menuItem1" > Portfolio  </li>
+                <li id="menuItem2" > About </li>
+                <li id="menuItem3" > Contact  </li>
+            </ul>
+        </div>
         <header>
             <nav class="menuNav" >
                 <a href="#" class="logo">Shayan</a>
                 <ul class="mobileMenu" >
-                    <li><img src="./images/menu.svg" class="menuIcon" alt="menu icon"></li>
+                    <li id="open" ><img src="./images/menu.svg" class="menuIcon" alt="menu icon"></li>
                 </ul>
                 <ul class="menu" >
                     <li>Portfolio</li>
                     <li>About</li>
                     <li>Contact</li>
                 </ul>
+                
             </nav>
         </header>
-         <section class="landingPage">
+         <section class="landingPage" id="landingPage" >
             <h1>I'm Shayan<br>Glad to see you <span class="excelamationMark">!</span></h1>
             <p class="LandingPageDetails" >I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
             <div class="connect">
@@ -155,7 +164,7 @@
                 </div>
             </article>
         </section>
-        <section class="about">
+        <section class="about" id="about" >
             <div class="aboutLeft" >
                 <div class="aboutTitle">About<br>Myself </div>
                 <p class="aboutDetails">
@@ -224,7 +233,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact" >
             <div class="contactBg"></div>
             <div class="contactTitle">Contact Me</div>
             <p class="contactPara">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
@@ -240,4 +249,36 @@
         </section>
     </div>
 </body>
+    <script>
+
+        let open = document.getElementById('open')
+        let close = document.getElementById('close')
+        let model = document.getElementById('model')
+        let menuItem1 = document.getElementById("menuItem1")
+        let menuItem2 = document.getElementById("menuItem2")
+        let menuItem3 = document.getElementById("menuItem3")
+
+        open.onclick = function (){
+            model.style.display = "block"
+        }
+
+        close.onclick = function (){
+            model.style.display = "none"
+        }
+
+        menuItem1.onclick = function (){
+            model.style.display = "none"
+        }
+        menuItem2.onclick = function (){
+            model.style.display = "none"
+        }
+        menuItem3.onclick = function (){
+            model.style.display = "none"
+        }
+
+
+
+        
+        
+    </script>
 </html>
