@@ -33,26 +33,30 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> HTML and CSS
+> HTML
+> CSS
+> JavaScript
+> Flexbox
+> Figma
 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">HTML and CSS</a></li>
+    <li>HTML ,CSS and Javascript</li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">No server</a></li>
+    <li>No server</li>
   </ul>
 </details>
 
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">No Database</a></li>
+    <li>No Database</li>
   </ul>
 </details>
 
@@ -60,7 +64,11 @@
 
 ### Key Features <a name="key-features"></a>
 
-> No features
+> Formspree service 
+> (RWD) responsive web design using media query
+> Animation and Transition
+> Use gitHub pages
+> Use the js DOM to close the mobile while clicking at the humburger icon 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -68,7 +76,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Not deployed
+> <a href="https://shayan1234554321.github.io/Portfolio_/" >Visit</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,13 +134,22 @@ Get a hosting website and give all of the github files
 - Twitter: [@twitterhandle](https://twitter.com/shayan123455432)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/shayan-khan20/)
 
+👤 Mathias
+
+- GitHub: [@githubhandle](https://github.com/mwismann)
+
+👤 Jaime Villegas
+
+- GitHub: [@githubhandle](https://github.com/jaimevillegas)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Not features in near future
+> Adding work popups
+> Adding functionality to about section
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -140,7 +157,9 @@ Get a hosting website and give all of the github files
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-As its my personal portfolio , no contributions are rquired
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the <a href="https://github.com/shayan1234554321/Portfolio_/issues" >issues page</a>.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,7 +167,7 @@ As its my personal portfolio , no contributions are rquired
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project please leave a review and also , i am open to work
+If you like this project please leave a ⭐️
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
