@@ -13,9 +13,9 @@
         <div class="menuModel" id="model" >
             <span class="close" id="close" >&times;</span>
             <ul>
-                <li id="menuItem1" > Portfolio  </li>
-                <li id="menuItem2" > About </li>
-                <li id="menuItem3" > Contact  </li>
+                <li id="menuItem1" > <a href="#landingPage"> Portfolio </a> </li>
+                <li id="menuItem2" > <a href="#about"> About</a> </li>
+                <li id="menuItem3" > <a href="#contact"> Contact </a> </li>
             </ul>
         </div>
         <header>
@@ -249,36 +249,5 @@
         </section>
     </div>
 </body>
-    <script>
-
-        let open = document.getElementById('open')
-        let close = document.getElementById('close')
-        let model = document.getElementById('model')
-        let menuItem1 = document.getElementById("menuItem1")
-        let menuItem2 = document.getElementById("menuItem2")
-        let menuItem3 = document.getElementById("menuItem3")
-
-        open.onclick = function (){
-            model.style.display = "block"
-        }
-
-        close.onclick = function (){
-            model.style.display = "none"
-        }
-
-        menuItem1.onclick = function (){
-            model.style.display = "none"
-        }
-        menuItem2.onclick = function (){
-            model.style.display = "none"
-        }
-        menuItem3.onclick = function (){
-            model.style.display = "none"
-        }
-
-
-
-        
-        
-    </script>
+    <script src="script.js"></script>
 </html>
