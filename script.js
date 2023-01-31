@@ -121,9 +121,9 @@ window.addEventListener('load', (() => {
 popupContainer.addEventListener('click', ((e) => {
   e.stopPropagation();
 }));
-menuItem1.addEventListener('click', (() => { modelDisplayNone(); }));
-menuItem2.addEventListener('click', (() => { modelDisplayNone(); }));
-menuItem3.addEventListener('click', (() => { modelDisplayNone(); }));
+menuItem1.addEventListener('click', (() => { mobileMenuDisplayNone(); }));
+menuItem2.addEventListener('click', (() => { mobileMenuDisplayNone(); }));
+menuItem3.addEventListener('click', (() => { mobileMenuDisplayNone(); }));
 close.addEventListener('click', (() => { mobileMenuDisplayNone(); }));
 open.addEventListener('click', (() => { mobileMenuDisplayBlock(); }));
 closePopup.addEventListener('click', (() => { popupDisplayNone(); }));
