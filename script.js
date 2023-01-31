@@ -99,11 +99,11 @@ function createWorkCard(Title, Description, Image, Techs, index) {
   worksContainer.appendChild(workHTML);
 }
 
-function modelDisplayNone() {
+function mobileMenuDisplayNone() {
   model.style.display = 'none';
 }
 
-function modelDisplayBlock() {
+function mobileMenuDisplayBlock() {
   model.style.display = 'block';
 }
 
@@ -124,7 +124,7 @@ popupContainer.addEventListener('click', ((e) => {
 menuItem1.addEventListener('click', (() => { modelDisplayNone(); }));
 menuItem2.addEventListener('click', (() => { modelDisplayNone(); }));
 menuItem3.addEventListener('click', (() => { modelDisplayNone(); }));
-close.addEventListener('click', (() => { modelDisplayNone(); }));
-open.addEventListener('click', (() => { modelDisplayBlock(); }));
+close.addEventListener('click', (() => { mobileMenuDisplayNone(); }));
+open.addEventListener('click', (() => { mobileMenuDisplayBlock(); }));
 closePopup.addEventListener('click', (() => { popupDisplayNone(); }));
 popupArticle.addEventListener('click', (() => { popupDisplayNone(); }));
