@@ -66,11 +66,11 @@
                 </ul>
             </div>
         </section>
-        <section class="works">
-            <article>
-                <img src="./images/workImage1.jpg" alt="work Image" class="workImage">
-                <div>
-                    <div class="workTitle">The Light You Need</div>
+        <section class="works" id="worksContainer">
+            <div class="popupArticle" id="popupArticle">
+                <div class="popupContainer" id="popupContainer">
+                    <span class="closePopup" id="closePopup">&times;</span>
+                    <div class="workTitle" id="title"></div>
                     <div class="attributes">
                         <p class="atributeTitle">Details</p> 
                         <ul>
@@ -78,91 +78,22 @@
                             <li>2015</li>
                         </ul> 
                     </div>
-                    <p class="details">
-                        A daily selection of privately personalized reads; no accounts or sign-ups required.
-                    </p>
-                    <div class="techStacks">
-                        <ul>
-                            <li>html</li>
-                            <li>css</li>
-                            <li>javacsript</li>
-                        </ul>
+                    <img id="image" alt="work Image" class="popupImage">
+                    <div class="detailsContainer" >
+                        <p class="details" id="description"></p>
+                        <div class="popupStacks" >
+                            <div class="techStacks">
+                                <ul id="techs">
+                                </ul>
+                            </div>
+                            <span>
+                                <button class="visitButton popupButton"> <a id="liveVersion">See Live</a>  <img src="./images/live.png" alt="Live icon"> </button>
+                                <button class="visitButton popupButton"> <a id="source">See Source</a>  <img src="./images/github-blue.svg" alt="Github Icon"> </button>
+                            </span>
+                        </div>
                     </div>
-                    <button class="visitButton">See Project</button>
                 </div>
-            </article>
-            <article>
-                <img src="./images/workImage2.jpg" alt="work Image" class="workImage">
-                <div>
-                    <div class="workTitle">Sky-Rocket The World</div>
-                    <div class="attributes">
-                        <p class="atributeTitle">Details</p> 
-                        <ul>
-                            <li>Backend Dev</li>
-                            <li>2017</li>
-                        </ul> 
-                    </div>
-                    <p class="details">
-                        A daily selection of privately personalized reads; no accounts or sign-ups required.
-                    </p>
-                    <div class="techStacks">
-                        <ul>
-                            <li>html</li>
-                            <li>css</li>
-                            <li>javacsript</li>
-                        </ul>
-                    </div>
-                    <button class="visitButton">See Project</button>
-                </div>
-            </article>
-            <article>
-                <img src="./images/workImage3.jpg" alt="work Image" class="workImage">
-                <div>
-                    <div class="workTitle">Fresh Drinks</div>
-                    <div class="attributes">
-                        <p class="atributeTitle">Details</p> 
-                        <ul>
-                            <li>Backend Dev</li>
-                            <li>2021</li>
-                        </ul> 
-                    </div>
-                    <p class="details">
-                        A daily selection of privately personalized reads; no accounts or sign-ups required.
-                    </p>
-                    <div class="techStacks">
-                        <ul>
-                            <li>html</li>
-                            <li>css</li>
-                            <li>javacsript</li>
-                        </ul>
-                    </div>
-                    <button class="visitButton">See Project</button>
-                </div>
-            </article>
-            <article>
-                <img src="./images/workImage4.jpg" alt="work Image" class="workImage">
-                <div>
-                    <div class="workTitle">Customize-able Watches</div>
-                    <div class="attributes">
-                        <p class="atributeTitle">Details</p> 
-                        <ul>
-                            <li>Backend Dev</li>
-                            <li>2015</li>
-                        </ul> 
-                    </div>
-                    <p class="details">
-                        A daily selection of privately personalized reads; no accounts or sign-ups required.
-                    </p>
-                    <div class="techStacks">
-                        <ul>
-                            <li>html</li>
-                            <li>css</li>
-                            <li>javacsript</li>
-                        </ul>
-                    </div>
-                    <button class="visitButton">See Project</button>
-                </div>
-            </article>
+            </div>
         </section>
         <section class="about" id="about" >
             <div class="aboutLeft" >
