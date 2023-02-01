@@ -138,10 +138,10 @@ form.addEventListener('submit', ((e) => {
   if (re.test(email.value) && email.value === email.value.toLowerCase()) {
     form.submit();
   } else {
-    error.classList.toggle("showError");
+    error.classList.toggle('showError');
     setTimeout(() => {
-      email.value = email.value.toLowerCase()
-      error.classList.toggle("showError");
+      email.value = email.value.toLowerCase();
+      error.classList.toggle('showError');
     }, [3000]);
   }
 }));

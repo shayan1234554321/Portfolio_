@@ -499,14 +499,14 @@
   }
 
   #error {
-    font-size: 0px;
+    font-size: 0;
     background-color: rgb(237, 55, 55);
     padding: 2px 10px;
     border-radius: 5px;
     transition: 0.3s ease-in-out;
     opacity: 0;
   }
-  
+
   .showError {
     opacity: 1 !important;
     font-size: 14px !important;
@@ -934,7 +934,7 @@
   }
 
   #error {
-    font-size: 0px;
+    font-size: 0;
     background-color: rgb(237, 55, 55);
     padding: 2px 10px;
     border-radius: 5px;
@@ -942,7 +942,7 @@
     opacity: 0;
     text-align: center;
   }
-  
+
   .showError {
     opacity: 1 !important;
     font-size: 14px !important;
