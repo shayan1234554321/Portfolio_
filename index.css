@@ -497,6 +497,12 @@
   form button {
     width: 130px;
   }
+
+  #error {
+    color: red;
+    font-size: 18px;
+    display: none;
+  }
 }
 
 /* --------- Mobile --------- */

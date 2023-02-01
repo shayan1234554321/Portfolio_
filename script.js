@@ -15,7 +15,8 @@ const image = document.getElementById('image');
 const liveVersion = document.getElementById('liveVersion');
 const source = document.getElementById('source');
 const worksContainer = document.getElementById('worksContainer');
-const form = document.forms[0]
+const error = document.getElementById('error');
+const form = document.forms[0];
 
 // ------------------------ Works Array -------------------------------
 const works = [
@@ -129,17 +130,17 @@ close.addEventListener('click', (() => { mobileMenuDisplayNone(); }));
 open.addEventListener('click', (() => { mobileMenuDisplayBlock(); }));
 closePopup.addEventListener('click', (() => { popupDisplayNone(); }));
 popupArticle.addEventListener('click', (() => { popupDisplayNone(); }));
-form.addEventListener('submit',((e)=>{
-  e.preventDefault()
-  re = /^[a-z0-9]+([._%+-][a-z0-9]+)*@[a-z0-9]+([.-][a-z0-9]+)*\.[a-z]{2,}$/
+form.addEventListener('submit', ((e) => {
+  e.preventDefault();
+  const re = /^[a-z0-9]+([._%+-][a-z0-9]+)*@[a-z0-9]+([.-][a-z0-9]+)*\.[a-z]{2,}$/;
 
-  const email = document.getElementById('email')
-  if( re.test(email.value) && email.value === email.value.toLowerCase() ){
-    form.submit()
-  }else{
-    alert("error broooo !!")
+  const email = document.getElementById('email');
+  if (re.test(email.value) && email.value === email.value.toLowerCase()) {
+    form.submit();
+  } else {
+    error.style.display = 'block';
+    setTimeout(() => {
+      error.style.display = 'none';
+    }, [3000]);
   }
-
-}))
-
-// function validateEmail(input) {  const ;  if (re.test(input) && input === input.toLowerCase()) {    ;  } else {    error.style.display = 'block';    setTimeout(() => {      error.style.display = 'none';    }, [3000]);  }}
+}));
