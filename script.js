@@ -15,6 +15,8 @@ const image = document.getElementById('image');
 const liveVersion = document.getElementById('liveVersion');
 const source = document.getElementById('source');
 const worksContainer = document.getElementById('worksContainer');
+const error = document.getElementById('error');
+const form = document.forms[0];
 
 // ------------------------ Works Array -------------------------------
 const works = [
@@ -128,3 +130,18 @@ close.addEventListener('click', (() => { mobileMenuDisplayNone(); }));
 open.addEventListener('click', (() => { mobileMenuDisplayBlock(); }));
 closePopup.addEventListener('click', (() => { popupDisplayNone(); }));
 popupArticle.addEventListener('click', (() => { popupDisplayNone(); }));
+form.addEventListener('submit', ((e) => {
+  e.preventDefault();
+  const re = /^[a-z0-9]+([._%+-][a-z0-9]+)*@[a-z0-9]+([.-][a-z0-9]+)*\.[a-z]{2,}$/;
+
+  const email = document.getElementById('email');
+  if (re.test(email.value) && email.value === email.value.toLowerCase()) {
+    form.submit();
+  } else {
+    error.classList.toggle('showError');
+    setTimeout(() => {
+      email.value = email.value.toLowerCase();
+      error.classList.toggle('showError');
+    }, [3000]);
+  }
+}));
