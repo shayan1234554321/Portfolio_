@@ -58,10 +58,10 @@ const works = [
 ];
 
 const formValues = {
-  name: "",
-  email: "",
-  desc: "",
-}
+  name: '',
+  email: '',
+  desc: '',
+};
 
 // ------------------------ Functions -------------------------------
 
@@ -129,11 +129,10 @@ window.addEventListener('load', (() => {
     createWorkCard(work.title, work.description, work.image, work.techs, index);
   });
 
-  const localData = JSON.parse(localStorage.formData)
-  Name.value = localData.name
-  email.value = localData.email
-  desc.value = localData.desc
-
+  const localData = JSON.parse(localStorage.formData);
+  Name.value = localData.name;
+  email.value = localData.email;
+  desc.value = localData.desc;
 }));
 popupContainer.addEventListener('click', ((e) => {
   e.stopPropagation();
@@ -161,9 +160,9 @@ form.addEventListener('submit', ((e) => {
   }
 }));
 
-form.addEventListener('keyup',((e)=>{
-  formValues.name = Name.value
-  formValues.email = email.value
-  formValues.desc = desc.value
-  localStorage.formData = JSON.stringify(formValues)
-}))
+form.addEventListener('keyup', (() => {
+  formValues.name = Name.value;
+  formValues.email = email.value;
+  formValues.desc = desc.value;
+  localStorage.formData = JSON.stringify(formValues);
+}));
