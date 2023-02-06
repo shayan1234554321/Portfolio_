@@ -17,6 +17,9 @@ const source = document.getElementById('source');
 const worksContainer = document.getElementById('worksContainer');
 const error = document.getElementById('error');
 const form = document.forms[0];
+const Name = document.getElementById('name');
+const desc = document.getElementById('desc');
+const email = document.getElementById('email');
 
 // ------------------------ Works Array -------------------------------
 const works = [
@@ -53,6 +56,12 @@ const works = [
     source: '#',
   },
 ];
+
+const formValues = {
+  name: '',
+  email: '',
+  desc: '',
+};
 
 // ------------------------ Functions -------------------------------
 
@@ -119,6 +128,11 @@ window.addEventListener('load', (() => {
   works.forEach((work, index) => {
     createWorkCard(work.title, work.description, work.image, work.techs, index);
   });
+
+  const localData = JSON.parse(localStorage.formData);
+  Name.value = localData.name;
+  email.value = localData.email;
+  desc.value = localData.desc;
 }));
 popupContainer.addEventListener('click', ((e) => {
   e.stopPropagation();
@@ -144,4 +158,11 @@ form.addEventListener('submit', ((e) => {
       error.classList.toggle('showError');
     }, [3000]);
   }
+}));
+
+form.addEventListener('keyup', (() => {
+  formValues.name = Name.value;
+  formValues.email = email.value;
+  formValues.desc = desc.value;
+  localStorage.formData = JSON.stringify(formValues);
 }));
